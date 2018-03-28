@@ -1,0 +1,34 @@
+<div class="container" style="font-family:'{{main.selected}}'">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Enter Addresses</div>
+    <div class="panel-body">
+      <div class="input-group">
+        <select ng-model="font" ng-change="main.getFont(font)">
+          <option ng-repeat="font in main.fonts" >{{font.family}}</option>
+        </select>
+        <input type="button" ng-click="main.getFonts()" value="Get Fonts">
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:500px">
+    <div>Samle Text</div>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in est viverra, sagittis augue et, suscipit turpis. Integer arcu sem, vehicula ut nulla quis, egestas dignissim neque. Donec ut malesuada dolor. Quisque porta ipsum a dolor consequat elementum. Donec ut enim porttitor, hendrerit ligula sit amet, fringilla lectus. Praesent nec pulvinar sem. Aenean lobortis, neque vitae pulvinar rutrum, massa mauris imperdiet neque, eget rhoncus risus lorem a eros. Cras efficitur egestas arcu, nec maximus tellus eleifend eu. Fusce pellentesque dictum est, ut commodo sem faucibus ut. Nulla tincidunt lacus mauris. Mauris iaculis id urna ac auctor.</p>
+        
+      <p>Proin bibendum leo et nunc mollis, at aliquam nisl facilisis. Ut laoreet erat vel arcu lobortis, a ultrices lacus rhoncus. Fusce quis facilisis nulla, dictum iaculis erat. Morbi blandit est eu massa congue, in maximus lorem gravida. Fusce et neque augue. Vivamus venenatis est non est varius, non posuere urna rhoncus. In a facilisis magna. Quisque tellus neque, congue porta hendrerit ut, ornare vel urna. Sed augue augue, aliquet quis enim non, interdum scelerisque enim. Nulla dignissim eleifend massa eget lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam egestas sit amet leo egestas viverra. Integer eu purus leo. Integer mollis sem varius metus aliquet, ac convallis eros lacinia. Nulla nec dignissim dui.</p>
+        
+      <p>Proin posuere et libero id sodales. Vivamus imperdiet non lectus ac lobortis. Nullam maximus, quam sed pretium varius, orci lorem consectetur metus, in dictum dui tortor sit amet libero. Phasellus at libero mattis, faucibus nisl quis, consequat risus. Integer consectetur libero id orci faucibus tincidunt. Aliquam diam ligula, rhoncus non porta ut, sagittis ornare purus. Aenean massa sapien, convallis ac nulla vel, molestie egestas urna. Nam iaculis urna vel sapien pretium sodales. Sed tempor eu diam id condimentum. Suspendisse sit amet blandit libero. Nullam tempor consectetur enim eu varius. Etiam lectus ipsum, facilisis consequat volutpat at, eleifend id orci. Morbi ac nulla sapien.</p>
+        
+      <p>Ut egestas tellus et enim porttitor convallis. Donec mattis est facilisis augue sodales semper. Curabitur egestas blandit nisi nec pharetra. Maecenas iaculis elementum neque quis vulputate. Nullam a gravida orci, quis convallis lectus. In eu nulla ac justo elementum maximus et eget tortor. Sed bibendum luctus fermentum. Integer tempus dui a leo viverra, non pulvinar nibh iaculis.</p>
+        
+      <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed at venenatis elit. Integer non enim tempor, lacinia nunc nec, faucibus eros. Praesent a felis vitae felis convallis mattis eu laoreet tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam rhoncus lorem mauris, in euismod enim finibus at. Nam commodo sagittis velit, vitae ultrices dui vulputate ut. Etiam ac mauris sed ex scelerisque convallis. Integer cursus magna nec cursus venenatis. Maecenas molestie, lacus non dictum pharetra, lacus enim sollicitudin mauris, in consequat augue sem vel felis. Vivamus semper gravida nulla accumsan egestas. </p>
+    </div>
+  </div>
+
+
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family={{main.selected}}">
+  
+</div>
